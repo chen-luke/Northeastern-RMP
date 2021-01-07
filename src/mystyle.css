@@ -1,0 +1,102 @@
+#first {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
+body {
+  font-family: "Roboto";
+}
+
+.info {
+  position: absolute;
+}
+
+.progressbar-text {
+  font-size: 1.8em;
+}
+
+.helpfulTxt {
+  grid-area: helpTxt;
+}
+
+.wtaVal {
+  grid-area: wtaRate;
+  justify-self: start;
+  font-size: large;
+  font-weight: 500;
+}
+.diffVal {
+  grid-area: diffnum;
+  justify-self: start;
+  font-size: large;
+  font-weight: 500;
+}
+.profName {
+  grid-area: name;
+  padding: 2em 1em 1em 1em;
+  font-weight: 400;
+}
+
+.profName span {
+  font-weight: 600;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.ratingHeader {
+  grid-area: rate;
+  justify-self: center;
+  padding-bottom: 1em;
+  font-weight: 300;
+}
+#pie {
+  grid-area: ratePie;
+  font-weight: 800;
+}
+.diff {
+  grid-area: diff_rate;
+  justify-self: start;
+  font-weight: 300;
+}
+.wta {
+  grid-area: w-t-a;
+  justify-self: start;
+  font-weight: 300;
+}
+.helpful {
+  grid-area: help;
+  padding: 2em 0 1em 0;
+  font-weight: 300;
+}
+.link {
+  grid-area: r-link;
+  padding: 0.8em 0 0.8em 0;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: lighter;
+  color: #faf9f7;
+}
+
+.toolTip {
+position: absolute;
+  z-index: 10;
+  padding: 0 2em 0 2em;
+  width: 350px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-template-areas:
+    "name name"
+    "rate ."
+    "ratePie diff_rate"
+    "ratePie   diffnum "
+    "ratePie w-t-a"
+    "ratePie wtaRate"
+    "help help"
+    "helpTxt helpTxt"
+    ". r-link";
+  background: #27241d;
+  color: #faf9f7;
+}

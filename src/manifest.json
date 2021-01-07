@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "obj ext",
+    "version": "0.1.0",
+
+    "content_security_policy": "script-src 'self' https://cdn.rawgit.com/; object-src 'self'",
+
+    "description": "A chrome extension",
+    "icons": {
+        "16":"./obj-16x16.png",
+        "32":"./obj-32x32.png",
+        "48":"./obj-48x48.png",
+        "128":"./obj-128x128.png"
+    },
+    "background": {
+        "page": "background.html"
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    
+    "permissions": [
+        "tabs",
+        "https://nubanner.neu.edu/StudentRegistrationSsb/ssb/classRegistration/classRegistration",
+        "https://nubanner.neu.edu/StudentRegistrationSsb/ssb/classSearch/classSearch",
+        "https://www.ratemyprofessors.com/*",
+        "storage"
+    ]
+}
